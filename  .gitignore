@@ -1,0 +1,14 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+/webapp/WEB-INF/target/
+/webapp/WEB-INF/classes/
+
+javen_config_pro.txt
+
+.idea/
+*.iml
