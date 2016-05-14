@@ -1,0 +1,448 @@
+2016-05-14 10:32:08 [com.jfinal.core.ActionHandler]-[WARN] [qtp466002798-16] (ActionHandler.java:62) ->404 Action Not Found: /ZQ/share 
+2016-05-14 11:02:34 [com.javen.controller.ConstellationController]-[ERROR] [qtp466002798-19] (ConstellationController.java:29) ->parameter:consName>>白羊座  consType>>>today 
+2016-05-14 11:02:34 [com.javen.controller.ConstellationController]-[ERROR] [qtp466002798-19] (ConstellationController.java:30) ->Response result:Constellation [code=0, reason=null, date=20160514, weekDate=null, name=白羊座, all=40%, color=橙色, health=70%, love=40%, money=60%, number=4, QFriend=白羊座, summary=今天是你非常忙碌的一天，部分白羊可能需要到处跑动，但在忙碌过程中也产生更多新的灵感。你也可能在精神上无法闲下来。太忙的时候可要喝杯水休息一下，难得的休息日也要注意劳逸结合。, work=60%, job=null, career=null, finance=null, weekHealth=null, weekJob=null, weekLove=null, weekFinance=null, weekWork=null, yearHealth=null, yearLove=null, yearFinance=null, luckyStone=null, info=null, text=null] 
+2016-05-14 11:03:00 [com.javen.controller.ConstellationController]-[ERROR] [qtp466002798-14] (ConstellationController.java:29) ->parameter:consName>>白羊座  consType>>>week 
+2016-05-14 11:03:00 [com.javen.controller.ConstellationController]-[ERROR] [qtp466002798-14] (ConstellationController.java:30) ->Response result:Constellation [code=0, reason=null, date=null, weekDate=2016年05月08日-2016年05月14日, name=白羊座, all=null, color=null, health=null, love=null, money=null, number=null, QFriend=null, summary=null, work=null, job=null, career=null, finance=null, weekHealth=健康：贪吃有发胖倾向。水逆期出行，小心交通意外。 作者：马子晴, weekJob=求职：柳暗花明又一村的状况出现。任何时候都不要放弃。 , weekLove=恋情：计较多，误会越解释越说不清，僵持阶段。 , weekFinance=财运：开销、投资理性，只是要小心水逆带来的合同纰漏和交易阻滞。 , weekWork=工作：木星结束在工作宫的逆行，是个好星象。陷入僵局的谈判会忽然有转机，合作机会意料不到地找上门。加之金星的佑护，接下来的两周很适合联络投资方。不过水逆的影响仍在，好运气也会有反复。 , yearHealth=null, yearLove=null, yearFinance=null, luckyStone=null, info=null, text=null] 
+2016-05-14 11:20:50 [com.jfinal.core.ActionHandler]-[ERROR] [qtp466002798-17] (ActionHandler.java:128) ->/tuser 
+java.lang.NullPointerException
+	at com.jfinal.plugin.activerecord.Model.findByCache(Model.java:821)
+	at com.jfinal.plugin.activerecord.Model.findByCache(Model.java:834)
+	at com.javen.model.TUser.findByMap(TUser.java:82)
+	at com.javen.controller.TUserController.index(TUserController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-14 11:26:34 [com.jfinal.core.ActionHandler]-[ERROR] [qtp466002798-17] (ActionHandler.java:128) ->/tuser 
+java.lang.NullPointerException
+	at com.jfinal.plugin.activerecord.Model.findByCache(Model.java:821)
+	at com.jfinal.plugin.activerecord.Model.findByCache(Model.java:834)
+	at com.javen.model.TUser.findByMap(TUser.java:82)
+	at com.javen.controller.TUserController.index(TUserController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-14 11:28:00 [com.mchange.v2.log.MLog]-[INFO] [main] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 11:28:00 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [main] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 11:28:00 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [main] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c33yef1yffndj|2833cc44, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c33yef1yffndj|2833cc44, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 11:28:01 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 11:28:01 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 11:28:01 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 11:28:01 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 11:28:01 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 11:28:01 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 11:28:04 [com.jfinal.core.ActionHandler]-[ERROR] [qtp205125520-27] (ActionHandler.java:102) ->/tuser 
+com.jfinal.render.RenderException: org.apache.jasper.JasperException: javax.el.MethodNotFoundException: Method isEmpty not found
+	at com.jfinal.render.JspRender.render(JspRender.java:69)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.jasper.JasperException: javax.el.MethodNotFoundException: Method isEmpty not found
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)
+	at com.jfinal.render.JspRender.render(JspRender.java:67)
+	... 25 more
+Caused by: javax.el.MethodNotFoundException: Method isEmpty not found
+	at javax.el.BeanELResolver.findMethod(BeanELResolver.java:720)
+	at javax.el.BeanELResolver.invoke(BeanELResolver.java:469)
+	at javax.el.CompositeELResolver.invoke(CompositeELResolver.java:257)
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:115)
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:167)
+	at com.sun.el.parser.AstNot.getValue(AstNot.java:63)
+	at com.sun.el.parser.AstAnd.getValue(AstAnd.java:63)
+	at com.sun.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:224)
+	at org.apache.jasper.runtime.PageContextImpl.evaluateExpression(PageContextImpl.java:1009)
+	at org.apache.jsp.back.tuser_jsp._jspx_meth_c_if_6(tuser_jsp.java:398)
+	at org.apache.jsp.back.tuser_jsp._jspx_meth_c_forEach_0(tuser_jsp.java:211)
+	at org.apache.jsp.back.tuser_jsp._jspx_meth_c_if_0(tuser_jsp.java:138)
+	at org.apache.jsp.back.tuser_jsp._jspService(tuser_jsp.java:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	... 41 more
+2016-05-14 11:28:45 [com.mchange.v2.log.MLog]-[INFO] [main] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 11:28:46 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [main] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 11:28:46 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [main] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c34xhhnteua4|2833cc44, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c34xhhnteua4|2833cc44, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 11:28:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 11:28:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 11:28:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 11:28:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 11:28:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 11:28:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 11:28:50 [com.jfinal.core.ActionHandler]-[ERROR] [qtp205125520-24] (ActionHandler.java:102) ->/tuser 
+com.jfinal.render.RenderException: org.apache.jasper.JasperException: javax.el.MethodNotFoundException: Method isEmpty not found
+	at com.jfinal.render.JspRender.render(JspRender.java:69)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.jasper.JasperException: javax.el.MethodNotFoundException: Method isEmpty not found
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)
+	at com.jfinal.render.JspRender.render(JspRender.java:67)
+	... 25 more
+Caused by: javax.el.MethodNotFoundException: Method isEmpty not found
+	at javax.el.BeanELResolver.findMethod(BeanELResolver.java:720)
+	at javax.el.BeanELResolver.invoke(BeanELResolver.java:469)
+	at javax.el.CompositeELResolver.invoke(CompositeELResolver.java:257)
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:115)
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:167)
+	at com.sun.el.parser.AstNot.getValue(AstNot.java:63)
+	at com.sun.el.parser.AstAnd.getValue(AstAnd.java:63)
+	at com.sun.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:224)
+	at org.apache.jasper.runtime.PageContextImpl.evaluateExpression(PageContextImpl.java:1009)
+	at org.apache.jsp.back.tuser_jsp._jspx_meth_c_if_6(tuser_jsp.java:398)
+	at org.apache.jsp.back.tuser_jsp._jspx_meth_c_forEach_0(tuser_jsp.java:211)
+	at org.apache.jsp.back.tuser_jsp._jspx_meth_c_if_0(tuser_jsp.java:138)
+	at org.apache.jsp.back.tuser_jsp._jspService(tuser_jsp.java:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	... 41 more
+2016-05-14 11:39:45 [com.mchange.v2.log.MLog]-[INFO] [main] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 11:39:46 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [main] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 11:39:46 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [main] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c3j2y77ff20v|2833cc44, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c3j2y77ff20v|2833cc44, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 11:39:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 11:39:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 11:39:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 11:39:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 11:39:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 11:39:46 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 11:43:33 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 11:43:33 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 11:43:33 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 11:43:33 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c3nyd41ra7api|48b65769, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c3nyd41ra7api|48b65769, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 11:43:34 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 11:43:34 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 11:43:34 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 11:43:34 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 11:43:34 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 11:43:34 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 11:47:35 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 11:47:35 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 11:47:36 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 11:47:36 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c3t5g714bolz9|67ccc0ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c3t5g714bolz9|67ccc0ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 11:47:36 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 11:47:36 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 11:47:36 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 11:47:36 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 11:47:36 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 11:47:36 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 11:47:45 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 11:47:45 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 11:47:45 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 11:47:45 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c3td11ugi9ss|28e5319e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c3td11ugi9ss|28e5319e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 11:47:46 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 11:47:46 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 11:47:46 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 11:47:46 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 11:47:46 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 11:47:46 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 11:48:05 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 11:48:06 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 11:48:06 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 11:48:06 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c3tsmmpdkjel|3a7d9800, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c3tsmmpdkjel|3a7d9800, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 11:48:06 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 11:48:06 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 11:48:06 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 11:48:06 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 11:48:06 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 11:48:06 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 11:49:21 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 11:49:21 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 11:49:21 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 11:49:22 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c3vf75j38soa|65054dbe, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c3vf75j38soa|65054dbe, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 11:49:22 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 11:49:22 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 11:49:22 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 11:49:22 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 11:49:22 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 11:49:22 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 11:50:28 [com.javen.utils.SMSUtils]-[ERROR] [qtp205125520-24] (SMSUtils.java:64) ->send sms to 13163069572 error:java.net.MalformedURLException: no protocol: ?name=13545191275&mobile=13163069572&pwd=7AB75348CF2CD8A29C47F6D8A46B&type=pt&content=%E4%BC%9A%E5%91%98%E6%B3%A8%E5%86%8C%E9%80%9A%E7%9F%A5%EF%BC%9A%E6%98%B5%E7%A7%B0%3AJaven%2C%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F%3A572839485%40qq.com%E3%80%90Javen%E3%80%91 
+2016-05-14 12:04:58 [com.mchange.v2.log.MLog]-[INFO] [main] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:04:58 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [main] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:04:58 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [main] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c4fi1g1shz7hy|2833cc44, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c4fi1g1shz7hy|2833cc44, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:04:59 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:04:59 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:04:59 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:04:59 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:04:59 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:04:59 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:05:39 [com.jfinal.core.ActionHandler]-[WARN] [qtp205125520-28] (ActionHandler.java:62) ->404 Action Not Found: /ZQ/oauth?code=001jUg922T2nM11Iel922qth922jUg9D&state=111 
+2016-05-14 12:07:04 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:07:04 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:07:05 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:07:05 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgevpd9g1c4i7ktif6tcy|5b6eb75f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgevpd9g1c4i7ktif6tcy|5b6eb75f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:07:05 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:07:05 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:07:05 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:07:05 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:07:05 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:07:05 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:07:07 [com.jfinal.core.ActionHandler]-[WARN] [qtp205125520-25] (ActionHandler.java:62) ->404 Action Not Found: /ZQ/oauth?code=011Rabrd1s70ao0G4Ftd1Cnbrd1Rabr-&state=111 
+2016-05-14 12:08:03 [com.javen.weixin.controller.WeiXinOauthController]-[WARN] [qtp205125520-24] (WeiXinOauthController.java:62) ->getUserInfo:{"openid":"o_pncsidC-pRRfCP4zj98h6slREw","nickname":"*ೄ˚༄Javen༡💯","sex":1,"language":"zh_CN","city":"武汉","province":"湖北","country":"中国","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/dxfJOtnqn0iaibZ8WYENtK0kialAP965LbaBiaYibcib2Tw6Ns5LyoqIs0XAXy6SK6bUKrHsh45ibGtBdAZVnicWoNCAoL6RN8AzkL7r\/0","privilege":[]}
+ 
+2016-05-14 12:08:03 [com.javen.model.Users]-[ERROR] [qtp205125520-24] (Users.java:25) ->openId:o_pncsidC-pRRfCP4zj98h6slREw nickName:*ೄ˚༄Javen༡ unionid:null headimgurl:http://wx.qlogo.cn/mmopen/dxfJOtnqn0iaibZ8WYENtK0kialAP965LbaBiaYibcib2Tw6Ns5LyoqIs0XAXy6SK6bUKrHsh45ibGtBdAZVnicWoNCAoL6RN8AzkL7r/0 country:中国 city:武汉 province:湖北 sex:1 
+2016-05-14 12:14:19 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:14:19 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:14:19 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:14:19 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgevpd9g1c4rixpb9l1an|73d0a65c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgevpd9g1c4rixpb9l1an|73d0a65c, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:14:20 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:14:20 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:14:20 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:14:20 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:14:20 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:14:20 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:15:12 [com.mchange.v2.log.MLog]-[INFO] [main] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:15:12 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [main] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:15:12 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [main] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgevpd9g1c4snngxkyi1d|2833cc44, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgevpd9g1c4snngxkyi1d|2833cc44, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:15:13 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:15:13 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:15:13 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:15:13 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:15:13 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:15:13 [SchedulerPlugin]-[INFO] [main] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:15:42 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:15:42 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:15:42 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:15:43 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgevpd9g1c4tb1b6nkfas|70847ad7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgevpd9g1c4tb1b6nkfas|70847ad7, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:15:43 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:15:43 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:15:43 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:15:43 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:15:43 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:15:43 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:16:12 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:16:13 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:16:13 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:16:13 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgevpd9g1c4tyeg1ud5at3|4c91da5d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgevpd9g1c4tyeg1ud5at3|4c91da5d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:16:13 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:16:13 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:16:13 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:16:13 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:16:13 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:16:13 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:29:51 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:29:51 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:29:52 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:29:52 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c5bi9o1vlnnvr|b0a102e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c5bi9o1vlnnvr|b0a102e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:29:52 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:29:52 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:29:52 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:29:52 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:29:52 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:29:52 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:31:07 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:31:07 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:31:07 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:31:07 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c5d4i411dp0mx|6440302b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c5d4i411dp0mx|6440302b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:31:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:31:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:31:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:31:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:31:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:31:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:33:28 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:33:29 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:33:29 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:33:29 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c5g5yn1yo7gep|2a0f0280, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c5g5yn1yo7gep|2a0f0280, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:33:29 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:33:29 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:33:29 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:33:29 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:33:29 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:33:29 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:37:26 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:37:26 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:37:27 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:37:27 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c5l9be32pcl1|79635035, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c5l9be32pcl1|79635035, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:37:27 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:37:27 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:37:27 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:37:27 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:37:27 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:37:27 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:40:23 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:40:23 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:40:23 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:40:23 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c5p1mj10ejna6|446ea1c1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c5p1mj10ejna6|446ea1c1, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:40:24 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:40:24 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:40:24 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:40:24 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:40:24 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:40:24 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 12:40:28 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 12:40:28 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 12:40:28 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 12:40:28 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c5p59h6bvbvr|470ab49b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c5p59h6bvbvr|470ab49b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 12:40:28 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 12:40:28 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 12:40:28 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 12:40:28 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 12:40:28 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 12:40:28 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 13:03:53 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 13:03:53 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 13:03:53 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 13:03:53 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqpf5t9g1c6j9gl1uzthta|60fabe07, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqpf5t9g1c6j9gl1uzthta|60fabe07, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 13:03:53 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 13:03:53 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 13:03:53 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 13:03:53 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 13:03:53 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 13:03:53 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 13:07:40 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 13:07:40 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 13:07:41 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 13:07:41 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c6o4zny0nv1f|7220da9c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c6o4zny0nv1f|7220da9c, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 13:07:41 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 13:07:41 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 13:07:41 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 13:07:41 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 13:07:41 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 13:07:41 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 13:10:07 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 13:10:07 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 13:10:07 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 13:10:07 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c6r9ynbmhpiy|41a7f00b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c6r9ynbmhpiy|41a7f00b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 13:10:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 13:10:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 13:10:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 13:10:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 13:10:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 13:10:08 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
+2016-05-14 13:10:37 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:163) ->SchedulerPlugin is stopped 
+2016-05-14 13:10:37 [com.mchange.v2.log.MLog]-[INFO] [JFinal-Scanner] (MLog.java:80) ->MLog clients using log4j logging. 
+2016-05-14 13:10:37 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] [JFinal-Scanner] (C3P0Registry.java:204) ->Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+2016-05-14 13:10:37 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] [JFinal-Scanner] (AbstractPoolBackedDataSource.java:462) ->Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgec5d9g1c6rx60162pk24|1a89114, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgec5d9g1c6rx60162pk24|1a89114, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1/ZQ?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+2016-05-14 13:10:37 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:213) ->--------load job: testJob successfully-------- 
+2016-05-14 13:10:37 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:214) ->class: com.javen.scheduler.task.StockTask 
+2016-05-14 13:10:37 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:215) ->type : cron 
+2016-05-14 13:10:37 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:216) ->expr : 59 23 * * * 
+2016-05-14 13:10:37 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:217) ->---------------- 
+2016-05-14 13:10:37 [SchedulerPlugin]-[INFO] [JFinal-Scanner] (SchedulerPlugin.java:155) ->SchedulerPlugin is started 
