@@ -12,13 +12,15 @@ weixin_guide 是基于 JFinal 的微信公众号极速开发 SDK，只需浏览 
 
 ## 3、jar包依赖详细说明
 `详见请见`：[JFinal weixin Jar的依赖](http://git.oschina.net/jfinal/jfinal-weixin/wikis/JFinal-weixin-1.6-Jar%E4%BE%9D%E8%B5%96)
+## 4、运行截图
+`详见请见`：[项目运行截图](http://git.oschina.net/javen205/weixin_guide/wikis/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C%E5%9B%BE)
 
-## 4、WIKI持续更新中
+## 5、WIKI持续更新中
 `详见请见`：[WIKI](http://git.oschina.net/javen205/weixin_guide/wikis/home)
 
 欢迎更多同学来帮助完善！
 
-## 5、更多支持
+## 6、更多支持
 - Email:javen205@126.com
 - QQ/微信：572839485
 

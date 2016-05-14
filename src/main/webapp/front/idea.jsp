@@ -33,7 +33,7 @@
 					src="<%=path%>/images/logo.png">
 			</h1>
 			<p class="page_desc">
-				在线英语教育领导品牌<br />外教一对一，随时随地学英语
+				 <p class="page_desc">极速开发微信公众号</p>
 			</p>
 		</div>
 		<form method="post"  action="<%=path%>/ajax/idea">
