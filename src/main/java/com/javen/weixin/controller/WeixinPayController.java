@@ -300,9 +300,9 @@ public class WeixinPayController extends ApiController {
 			Map<String, String> payResult = PaymentKit.xmlToMap(xmlResult);
 			
 			String return_code = payResult.get("return_code");
-			String return_msg = payResult.get("return_msg");
+			String result_code = payResult.get("result_code");
 			
-			if (StrKit.notBlank(return_code) && StrKit.notBlank(return_msg) && return_code.equalsIgnoreCase("SUCCESS")&&return_msg.equalsIgnoreCase("OK")) {
+			if (StrKit.notBlank(return_code) && StrKit.notBlank(result_code) && return_code.equalsIgnoreCase("SUCCESS")&&result_code.equalsIgnoreCase("SUCCESS")) {
 				// 以下字段在return_code 和result_code都为SUCCESS的时候有返回
 				String prepay_id = payResult.get("prepay_id");
 				
