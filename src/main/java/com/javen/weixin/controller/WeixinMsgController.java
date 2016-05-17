@@ -41,7 +41,7 @@ import com.jfinal.weixin.template.TempToJson;
  */
 public class WeixinMsgController extends MsgControllerAdapter {
 	static Log logger = Log.getLog(WeixinMsgController.class);
-	private static final String helpStr = "\t你的品位不错哦  么么哒。Hi~我是小编carina，感谢您关注Javen微信开发指南。因为有您关注的目光，我们才得以不断前行。需获得免费课程试听，请登录公司网站www.zhiqiangyy.com获得更多信息哦。";
+	private static final String helpStr = "\t你的品位不错哦  么么哒。";
 
 	/**
 	 * 如果要支持多公众账号，只需要在此返回各个公众号对应的  ApiConfig 对象即可
