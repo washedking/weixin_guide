@@ -21,4 +21,8 @@ public class ShareController extends Controller{
 	public void customer(){
 		render("customer.jsp");
 	}
+	
+	public void pic(){
+		render("pic.jsp");
+	}
 }
