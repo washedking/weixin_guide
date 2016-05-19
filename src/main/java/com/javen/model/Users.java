@@ -1,5 +1,6 @@
 package com.javen.model;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -38,10 +39,10 @@ public class Users extends Model<Users> {
 			user.set("city", city);
 			user.set("province", province);
 			user.set("sex", sex);
-			
+			user.set("updateTime", new Date());
 			return user.update();
 		}else {
-			if (!StrKit.isBlank(openId)) {
+			if (StrKit.notBlank(openId)) {
 				Users me = new Users();
 				me.set("openId", openId);
 				me.set("nickName", nickName);
@@ -51,6 +52,7 @@ public class Users extends Model<Users> {
 				me.set("city", city);
 				me.set("province", province);
 				me.set("sex", sex);
+				me.set("updateTime", new Date());
 				return me.save();
 			}
 		}

@@ -59,7 +59,7 @@
 			            官网
 			        </p>
 			    </a>
-			    <a target="_blank" href="<%=path %>/order?opid=${openId}"  class="weui_grid">
+			    <a target="_blank" href="#"  class="weui_grid">
 			        <div class="weui_grid_icon">
 			            <img src="<%=path %>/images/iconfont-gouwuche.png" alt="">
 			        </div>
@@ -91,7 +91,7 @@
 	        <div class="weui_panel weui_panel_access">
 	            <div class="weui_panel_hd green"><h3 >微信开发定制</h3></div>
 	            <div class="weui_panel_bd">
-	            	<a href="<%=path %>/course/getCoursesByType?opid=${openId}&courseType=3" class="weui_media_box weui_media_appmsg">
+	            	<a href="#" class="weui_media_box weui_media_appmsg">
 	                    <div class="weui_media_hd">
 	                        <img class="weui_media_appmsg_thumb" src="<%=path %>/images/iconfont-personal.png" alt="">
 	                    </div>
@@ -100,7 +100,7 @@
 	                        <p class="weui_media_desc">量身打造个人专属微信公众号</p>
 	                    </div>
 	                </a>
-	            	<a href="<%=path %>/course/getCoursesByType?opid=${openId}&courseType=2" class="weui_media_box weui_media_appmsg">
+	            	<a href="#" class="weui_media_box weui_media_appmsg">
 	                    <div class="weui_media_hd">
 	                        <img class="weui_media_appmsg_thumb" src="<%=path %>/images/iconfont-xiaoban.png"" alt="">
 	                    </div>
@@ -109,7 +109,7 @@
 	                        <p class="weui_media_desc">小班交流，高效指导</p>
 	                    </div>
 	                </a>
-	                <a href="<%=path %>/course/getCoursesByType?opid=${openId}&courseType=1" class="weui_media_box weui_media_appmsg">
+	                <a href="#" class="weui_media_box weui_media_appmsg">
 	                    <div class="weui_media_hd">
 	                        <img class="weui_media_appmsg_thumb" src="<%=path %>/images/iconfont-daxuetang.png" alt="">
 	                    </div>
@@ -119,7 +119,7 @@
 	                    </div>
 	                </a>
 	            </div>
-	            <a class="weui_panel_ft" href="<%=path %>/course/getAll?opid=${openId}">查看更多</a>
+	            <a class="weui_panel_ft" href="#">查看更多</a>
 	        </div>
 	    </div>
 	    
