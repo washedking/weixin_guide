@@ -13,6 +13,8 @@ weixin_guide 是基于 JFinal 的微信公众号极速开发 SDK，只需浏览 
 ## 3、版本更新记录
 `详见请见`：[更新说明](http://git.oschina.net/javen205/weixin_guide/wikis/%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95)
 
+如发现`bug`或者有更好的建议以及意见请发`Issues` 帮助项目迭代更新
+
 ## 4、JFinal weixin的使用参考
 `详情请见`：[JFinal weixin中的配置以及接口的使用](http://git.oschina.net/jfinal/jfinal-weixin/wikis/home)
 
