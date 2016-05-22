@@ -116,6 +116,7 @@ public class AjaxController extends Controller {
 		user.set("openId", openId);
 		user.set("password2", password);
 		user.set("nickName", nickName);
+		user.set("registerDate", new Date());
 		
 		boolean temp = user.save();
 
@@ -159,15 +160,20 @@ public class AjaxController extends Controller {
 		String account = getPara("account");
 		String password = getPara("password");
 		String remember = getPara("remember", "off");
+		
+		log.warn("account:"+account+" password:"+password+" remember："+remember);
+		
 		if (RegexUtils.find(RegexUtils.EMAIL, account)) {
 			user = TUser.dao.findByEmail(account);
 			if (null == user) {
+				log.warn("该邮箱尚未注册");
 				renderJson(result.addError("该邮箱尚未注册"));
 				return;
 			}
 		}else {
 			user = TUser.dao.findByTel(account);
 			if (null == user) {
+				log.warn("该手机号尚未注册");
 				renderJson(result.addError("该手机号尚未注册"));
 				return;
 			}
@@ -177,6 +183,7 @@ public class AjaxController extends Controller {
 		// 比较密码
 		String oldPwd = user.get("password");
 		if (!oldPwd.equals(password)) {
+			log.warn("您输入的密码不正确");
 			renderJson(result.addError("您输入的密码不正确"));
 			return;
 		}
@@ -212,6 +219,7 @@ public class AjaxController extends Controller {
 			idea.set("account", account);
 			idea.set("contact", contact);
 			idea.set("context", ideaContext);
+			idea.set("createTime", new Date());
 			
 			boolean saveSuccess = idea.save();
 			

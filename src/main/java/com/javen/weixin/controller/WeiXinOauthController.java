@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.javen.model.Users;
 import com.javen.utils.WeiXinUtils;
+import com.jfinal.kit.JsonKit;
 import com.jfinal.kit.PropKit;
 import com.jfinal.log.Log;
 import com.jfinal.weixin.sdk.api.ApiConfig;
@@ -72,6 +73,7 @@ public class WeiXinOauthController extends ApiController{
 				String unionid=jsonObject.getString("unionid");
 				//获取用户信息判断是否关注
 				ApiResult userInfo = UserApi.getUserInfo(openId);
+				log.warn(JsonKit.toJson("is subsribe>>"+userInfo));
 				if (userInfo.isSucceed()) {
 					String userStr = userInfo.toString();
 					subscribe=JSON.parseObject(userStr).getIntValue("subscribe");
@@ -86,9 +88,9 @@ public class WeiXinOauthController extends ApiController{
 			}else {
 				//根据state 跳转到不同的页面
 				if (state.equals("2222")) {
-					redirect("/xxx");
+					redirect("http://www.cnblogs.com/zyw-205520/");
 				}else {
-					redirect("/");
+					redirect("/login");
 				}
 			}
 			

@@ -34,7 +34,7 @@
 				    <div class="weui_cell">
 				        <div class="weui_cell_hd"></div>
 				        <div class="weui_cell_bd weui_cell_primary">
-				            <input class="weui_input" type="text" name="account" placeholder="请输入手机号">
+				            <input class="weui_input" type="text" name="account" placeholder="请输入手机号或者邮箱">
 				        </div>
 				    </div>
 				</div>
@@ -85,7 +85,7 @@
 		    <a class="weui_btn weui_btn_warn" href="<%=path %>/forget" id="">忘记密码</a>
 		</div>
 	</div>
-	
+</div>
 	
 	
 <script type="text/javascript">
