@@ -30,6 +30,7 @@ import com.jfinal.plugin.c3p0.C3p0Plugin;
 import com.jfinal.plugin.ehcache.EhCachePlugin;
 import com.jfinal.render.ViewType;
 import com.jfinal.weixin.sdk.api.ApiConfigKit;
+import com.jfinal.weixin.usercontroller.UserController;
 
 /**
  * @author Javen
@@ -79,6 +80,7 @@ public class APPConfig extends JFinalConfig{
 		
 		me.add("/ajax", AjaxController.class);
 		me.add("/constellation", ConstellationController.class,"/front");
+		me.add("/wxuser", UserController.class,"/front");
 		
 	}
 	
