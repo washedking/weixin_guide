@@ -91,6 +91,16 @@ public class WeiXinUtils {
 		}
 	}
 	
+	/** 
+     * emoji表情转换(hex -> utf-16) 
+     *  
+     * @param hexEmoji 
+     * @return 
+     */  
+    public static String emoji(int hexEmoji) {  
+        return String.valueOf(Character.toChars(hexEmoji));  
+    }
+	
 	/**
 	 * 发送模板消息
 	 * @param orderId

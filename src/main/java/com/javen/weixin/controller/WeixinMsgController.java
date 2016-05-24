@@ -3,6 +3,8 @@ package com.javen.weixin.controller;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.javen.face.FaceService;
+import com.javen.utils.WeiXinUtils;
 import com.javen.weixin.service.BaiduTranslate;
 import com.jfinal.kit.PropKit;
 import com.jfinal.log.Log;
@@ -73,8 +75,10 @@ public class WeixinMsgController extends MsgControllerAdapter {
 			OutTextMsg outMsg = new OutTextMsg(inTextMsg);
 			outMsg.setContent(helpStr);
 			render(outMsg);
-		}
-		else if (msgContent.startsWith("翻译")) {
+		}else if (msgContent.equals("1") || msgContent.equals("人脸识别")) {
+			msgContent = "请发一张清晰的照片！" + WeiXinUtils.emoji(0x1F4F7);
+			renderOutTextMsg(msgContent);
+		}else if (msgContent.startsWith("翻译")) {
 				try {
 					msgContent = BaiduTranslate.Translates(msgContent);
 				} catch (Exception e) {
@@ -195,8 +199,11 @@ public class WeixinMsgController extends MsgControllerAdapter {
 	protected void processInImageMsg(InImageMsg inImageMsg)
 	{
 		//转发给多客服PC客户端
-		OutCustomMsg outCustomMsg = new OutCustomMsg(inImageMsg);
-		render(outCustomMsg);
+//		OutCustomMsg outCustomMsg = new OutCustomMsg(inImageMsg);
+//		render(outCustomMsg);
+		String picUrl =inImageMsg.getPicUrl();
+		String respContent=FaceService.detect(picUrl);
+		renderOutTextMsg(respContent);
 	}
 
 	/**
