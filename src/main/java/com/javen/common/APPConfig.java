@@ -15,6 +15,7 @@ import com.javen.weixin.controller.WeiXinOauthController;
 import com.javen.weixin.controller.WeixinApiController;
 import com.javen.weixin.controller.WeixinMsgController;
 import com.javen.weixin.controller.WeixinPayController;
+import com.javen.weixin.user.UserController;
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
 import com.jfinal.config.Interceptors;
@@ -30,7 +31,6 @@ import com.jfinal.plugin.c3p0.C3p0Plugin;
 import com.jfinal.plugin.ehcache.EhCachePlugin;
 import com.jfinal.render.ViewType;
 import com.jfinal.weixin.sdk.api.ApiConfigKit;
-import com.jfinal.weixin.usercontroller.UserController;
 
 /**
  * @author Javen

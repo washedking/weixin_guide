@@ -3,7 +3,7 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  */
-package com.jfinal.weixin.template;
+package com.javen.weixin.template;
 
 public class TempItem {
 	private String value;

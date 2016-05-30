@@ -1,4 +1,4 @@
-package com.jfinal.weixin.usercontroller;
+package com.javen.weixin.user;
 
 public class UserInfo {
 	private String city;

@@ -1,4 +1,4 @@
-package com.jfinal.weixin.usercontroller;
+package com.javen.weixin.user;
 
 
 import java.io.File;
@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.javen.weixin.user.UserConfig.LangType;
 import com.jfinal.kit.HttpKit;
 import com.jfinal.kit.JsonKit;
 import com.jfinal.kit.PropKit;
@@ -20,7 +21,6 @@ import com.jfinal.weixin.sdk.api.ApiConfig;
 import com.jfinal.weixin.sdk.api.ApiResult;
 import com.jfinal.weixin.sdk.api.UserApi;
 import com.jfinal.weixin.sdk.jfinal.ApiController;
-import com.jfinal.weixin.usercontroller.UserConfig.LangType;
 
 import jxl.Workbook;
 import jxl.write.Label;

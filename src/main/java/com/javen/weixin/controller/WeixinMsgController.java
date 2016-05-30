@@ -6,6 +6,9 @@ import java.util.Date;
 import com.javen.face.FaceService;
 import com.javen.utils.WeiXinUtils;
 import com.javen.weixin.service.BaiduTranslate;
+import com.javen.weixin.template.DataItem2;
+import com.javen.weixin.template.TempItem;
+import com.javen.weixin.template.TempToJson;
 import com.jfinal.kit.PropKit;
 import com.jfinal.log.Log;
 import com.jfinal.weixin.sdk.api.ApiConfig;
@@ -31,9 +34,6 @@ import com.jfinal.weixin.sdk.msg.in.speech_recognition.InSpeechRecognitionResult
 import com.jfinal.weixin.sdk.msg.out.OutCustomMsg;
 import com.jfinal.weixin.sdk.msg.out.OutTextMsg;
 import com.jfinal.weixin.sdk.msg.out.OutVoiceMsg;
-import com.jfinal.weixin.template.DataItem2;
-import com.jfinal.weixin.template.TempItem;
-import com.jfinal.weixin.template.TempToJson;
 
 /**
  * 将此 DemoController 在YourJFinalConfig 中注册路由，
