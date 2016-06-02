@@ -141,6 +141,18 @@ public class WeixinApiController extends ApiController {
 //        ApiResult apiResult = QrcodeApi.create(str);
 //        renderText(apiResult.getJson());
 	}
+	/**
+	 * 测试输出的结果
+	 * create>>{"ticket":"gQFo8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL0cwT21FZjNtM3RXbmd3REF6Ml82AAIEzyFQVwMEAAAAAA==","url":"http:\/\/weixin.qq.com\/q\/G0OmEf3m3tWngwDAz2_6"}
+ qrcodeUrl:https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFo8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL0cwT21FZjNtM3RXbmd3REF6Ml82AAIEzyFQVwMEAAAAAA==
+	 * 
+	 * 
+	 */
+	public void getQrcode2(){
+		ApiResult apiResult = QrcodeApi.createPermanent(100);
+		String qrcodeUrl = QrcodeApi.getShowQrcodeUrl(apiResult.getStr("ticket"));
+		renderText("create>>"+apiResult.getJson()+" qrcodeUrl:"+qrcodeUrl);
+	}
 
 	/**
 	 * 长链接转成短链接

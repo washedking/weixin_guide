@@ -129,9 +129,10 @@ public class WeixinMsgController extends MsgControllerAdapter {
 		}
 		
 		else {
+			renderOutTextMsg("你发的内容为："+msgContent);
 			//转发给多客服PC客户端
-			OutCustomMsg outCustomMsg = new OutCustomMsg(inTextMsg);
-			render(outCustomMsg);
+//			OutCustomMsg outCustomMsg = new OutCustomMsg(inTextMsg);
+//			render(outCustomMsg);
 		}
 		
 	}
@@ -228,6 +229,7 @@ public class WeixinMsgController extends MsgControllerAdapter {
 	@Override
 	protected void processInQrCodeEvent(InQrCodeEvent inQrCodeEvent)
 	{
+		System.out.println("扫码.......");
 		if (InQrCodeEvent.EVENT_INQRCODE_SUBSCRIBE.equals(inQrCodeEvent.getEvent()))
 		{
 			logger.debug("扫码未关注：" + inQrCodeEvent.getFromUserName());
@@ -238,7 +240,9 @@ public class WeixinMsgController extends MsgControllerAdapter {
 		if (InQrCodeEvent.EVENT_INQRCODE_SCAN.equals(inQrCodeEvent.getEvent()))
 		{
 			logger.debug("扫码已关注：" + inQrCodeEvent.getFromUserName());
+			renderOutTextMsg("扫码已关注,二维码内容：" + inQrCodeEvent.getEventKey());
 		}
+		
 	}
 
 	@Override
