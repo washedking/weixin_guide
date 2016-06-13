@@ -1,7 +1,10 @@
 package com.javen.common;
 
+import java.io.File;
+
 import com.javen.controller.AjaxController;
 import com.javen.controller.ConstellationController;
+import com.javen.controller.FileController;
 import com.javen.controller.IndexController;
 import com.javen.controller.ShareController;
 import com.javen.controller.TUserController;
@@ -23,6 +26,7 @@ import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
 import com.jfinal.core.JFinal;
+import com.jfinal.kit.PathKit;
 import com.jfinal.kit.PropKit;
 import com.jfinal.log.Log;
 import com.jfinal.plugin.SchedulerPlugin;
@@ -60,8 +64,12 @@ public class APPConfig extends JFinalConfig{
 		me.setDevMode(PropKit.getBoolean("devMode", false));
 		me.setEncoding("utf-8");
 		me.setViewType(ViewType.JSP);
+		//设置上传文件保存的路径
+		me.setBaseUploadPath(PathKit.getWebRootPath()+File.separator+"myupload");
 		// ApiConfigKit 设为开发模式可以在开发阶段输出请求交互的 xml 与 json 数据
 		ApiConfigKit.setDevMode(me.getDevMode());
+		
+		
 	}
 	
 	/**
@@ -81,7 +89,7 @@ public class APPConfig extends JFinalConfig{
 		me.add("/ajax", AjaxController.class);
 		me.add("/constellation", ConstellationController.class,"/front");
 		me.add("/wxuser", UserController.class,"/front");
-		
+		me.add("/file", FileController.class,"/front");
 	}
 	
 	/**
