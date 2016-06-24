@@ -112,7 +112,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>it.sauronsoftware.cron4j</groupId>
 			<artifactId>cron4j</artifactId>
@@ -148,6 +148,45 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+
+			<plugin>
+		 		<groupId>org.eclipse.jetty</groupId>
+		 		<artifactId>jetty-maven-plugin</artifactId>
+		 		<version>9.2.8.v20150217</version>  <!-- jdk1.6 8.1.8.v20121106-->
+		 		<configuration>
+			 		<httpConnector>
+				 		<port>8081</port>
+			 		</httpConnector>
+			 		<stopKey>shutdown</stopKey>
+			 		<stopPort>9966</stopPort>
+				 <!--
+				 <scanIntervalSeconds>2</scanIntervalSeconds>
+				 -->
+				 <reload>manual</reload>
+				 <dumpOnStart>true</dumpOnStart>
+				 <webApp>
+					 <contextPath>/${project.artifactId}</contextPath>
+					 <!--
+					 <resourceBases>
+						 <resourceBase>${project.basedir}/src/main/webapp</resourceBase>
+						 <resourceBase>${project.basedir}/commons</resourceBase>
+					 </resourceBases>
+					 -->
+				 </webApp>
+				 <requestLog implementation="org.eclipse.jetty.server.NCSARequestLog">
+					 <filename>target/access-yyyy_mm_dd.log</filename>
+					 <filenameDateFormat>yyyy_MM_dd</filenameDateFormat>
+					 <logDateFormat>yyyy-MM-dd HH:mm:ss</logDateFormat>
+					 <logTimeZone>GMT+8:00</logTimeZone>
+					 <append>true</append>
+					 <logServer>true</logServer>
+					 <retainDays>120</retainDays>
+					 <logCookies>true</logCookies>
+				 </requestLog>
+		 </configuration>
+	 </plugin>
+
+
 		</plugins>
 	</build>
 </project>
