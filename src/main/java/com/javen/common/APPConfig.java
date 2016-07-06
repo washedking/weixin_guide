@@ -3,6 +3,7 @@ package com.javen.common;
 import java.io.File;
 
 import com.javen.controller.AjaxController;
+import com.javen.controller.AjaxFileContorlller;
 import com.javen.controller.ConstellationController;
 import com.javen.controller.FileController;
 import com.javen.controller.IndexController;
@@ -90,6 +91,7 @@ public class APPConfig extends JFinalConfig{
 		me.add("/constellation", ConstellationController.class,"/front");
 		me.add("/wxuser", UserController.class,"/front");
 		me.add("/file", FileController.class,"/front");
+		me.add("/ajaxfile", AjaxFileContorlller.class,"/front");
 	}
 	
 	/**
